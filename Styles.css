@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+
+.card {
+    background-color: red;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    transition: box-shadows 0.3 ease;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+
+
+}
+.normal-text{
+    justify-self: center;
+    margin: auto;
+}
+.promo-item {
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;justify-content: center;
+    margin: 2px;
+
+}
+
+.promo{
+    text-align: center;
+    font-size: medium;
+    justify-content: end;
+}
+
+.Ma promo{
+    text-align: center;
+}
+
+.card p{
+    font-size: 16px;
+}  
+.h1{
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    font-size: medium;
+}
+
+.card:hover .hidden-text {
+    display: block;
+    opacity: 1;
+}
+
+.hidden-text{
+    display: none;
+    opacity: 0;
+    transition: opacity; 0.3 s ease
+}
+.card:hover .normal-text{
+    display: none;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3)
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
